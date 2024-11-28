@@ -1,0 +1,59 @@
+.menu {
+    padding: 40px;
+    background-color: #4CAF50;
+  }
+  
+  .menu h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 20px;
+  }
+  
+  .menu-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .menu-card-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu-card-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .menu-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .menu-ingredients {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

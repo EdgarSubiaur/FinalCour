@@ -8,7 +8,6 @@
 
 header, nav, main, footer {
   padding: 10px;
-  border: 1px solid #ddd;
 }
 
 /* Media Query para dispositivos móviles */
@@ -105,12 +104,12 @@ ul {
 
 li {
   font-size: 1.1rem;
-  color: #fff;
+  color: #333;
 }
 
 li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -160,4 +159,130 @@ main {
   p {
     font-size: 0.8rem;
   }
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; /* Centr horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente  */
+  height: 100px; /* Ajusta  */
+}
+
+header img {
+  max-width: 100%; /* imagen no se desborde */
+  height: auto;
+}
+
+footer {
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 20px; /* Opcional, ajusta el espacio dentro del footer */
+}
+
+footer p {
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+.testimonials {
+  text-align: center; /* Centra el título de la sección */
+  padding-top: 40px;
+}
+
+.testimonials blockquote {
+  display: inline-block; /* Cambia el comportamiento de los blockquote para que se alineen en línea */
+  max-width: 300px; /* Limita el ancho de cada testimonio */
+  border-left: 4px solid #ccc; /* Estilo visual para el bloque de cita */
+  padding-left: 20px;
+  font-style: italic;
+  margin: 10px; /* Espacio entre los testimonios */
+}
+
+.restaurant-features {
+  padding: 40px;
+  background-color: #4CAF50;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.contact {
+  padding: 40px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.social-media h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.social-media .icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media a {
+  font-size: 1.2rem;
+  color: #0077b6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #005f8d;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos de forma vertical */
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }

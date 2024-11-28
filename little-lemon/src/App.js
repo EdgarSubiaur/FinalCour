@@ -1,31 +1,54 @@
-import React from "react";
-import "./App.css";  // Asegúrate de que el archivo CSS está siendo importado
-import Header from "./Header";
-import Nav from "./Nav";
-import Main from "./Main";
-import Footer from "./Footer";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
-function App() {
+// Importación de los componentes
+import Header from './Header';
+import Nav from './Nav';
+import Main from './Main';
+import Footer from './Footer';
+import BookingForm from './BookingForm';
+import About from './About';
+import ConfirmedBooking from './ConfirmedBooking';
+import Contact from './Contact';
+import Menu from './Menu';
+
+const App = () => {
   return (
-    <div className="container">  {/* Aplica la clase container que tiene el diseño de Grid */}
-      <header>
-        <Header />
-      </header>
+    <Router>
+      <div className="container">
+        <header>
+          <Header />
+        </header>
 
-      <nav>
-        <Nav />
-      </nav>
+        <nav>
+          <Nav />
+        </nav>
 
-      <main>
-        <Main />
-      </main>
+        <main>
+          <Routes>
+            {/* Ruta principal con el formulario de reserva */}
+            <Route path="/" element={<Main />} />
 
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+            {/* Ruta de confirmación de reserva */}
+            <Route path="/confirmed" element={<ConfirmedBooking />} />
+
+            {/* Ruta About (si se desea mantener) */}
+            <Route path="/about" element={<About />} />
+
+            <Route path="/contact" element={<Contact />} />
+
+            <Route path="/menu" element={<Menu />} />
+
+          </Routes>
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
-
